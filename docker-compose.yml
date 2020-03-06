@@ -1,0 +1,12 @@
+version: "3.4"
+
+services:
+  mockserver:
+    image: mockserver/mockserver
+    container_name: mockserver
+    env_file:
+      - env/mockserver.env
+    ports:
+      - 1080:1080
+    volumes:
+      - ./certs:/opt/mockserver/certs
