@@ -1,0 +1,13 @@
+{
+  "name": "testing-mock-server",
+  "version": "1.0.0",
+  "description": "Testing/Debugging tool to use with HAR/JSON files to mock api responses",
+  "main": "index.js",
+  "repository": "git@github.com:luispedro18/testing-mock-server.git",
+  "author": "Luís M. Almeida <almeida.lpm@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "js-yaml": "^3.13.1",
+    "mockserver-client": "^5.9.0"
+  }
+}
