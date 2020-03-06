@@ -104,3 +104,10 @@ dist
 .tern-port
 
 .DS_Store
+
+
+# Business specific data
+mocks
+data
+env
+certs
