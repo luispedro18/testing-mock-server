@@ -1,11 +1,23 @@
 const getFileExtension = filename => filename.split('.').pop();
 
 const getProperties = properties => properties.map(({ name, value }) => ({ name: name.replace(':', ''), values: [value] }));
-const getPath = headers => headers.filter(({ name }) => name === ':path').map(({ value }) => value)[0].split('?')[0];
+const getPath = url => url.split('?')[0]
+const getQueryString = url => {
+    const urlObject = new URL(url, "https://example.com");
+    const queryStringObject = new URLSearchParams(urlObject.search);
 
-const filterWhitelistedProperties = (oldObject, blacklist) => {
+    let result = []
+
+    for(let pair of queryStringObject.entries()){
+        result.push({name: pair[0], values: [pair[1]]})
+    }
+
+    return result;
+}
+
+const filterWhitelistedProperties = (oldObject, whitelist) => {
     return Object.keys(oldObject).reduce((newObject, key) => {
-        if (blacklist.includes(key)) {
+        if (whitelist.includes(key)) {
             newObject[key] = oldObject[key];
         }
 
@@ -13,4 +25,4 @@ const filterWhitelistedProperties = (oldObject, blacklist) => {
     }, {})
 };
 
-module.exports = { getFileExtension, getPath, getProperties, filterWhitelistedProperties };
+module.exports = { getFileExtension, getPath, getProperties, filterWhitelistedProperties, getQueryString };

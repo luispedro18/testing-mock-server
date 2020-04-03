@@ -6,6 +6,9 @@
   "repository": "git@github.com:luispedro18/testing-mock-server.git",
   "author": "Luís M. Almeida <almeida.lpm@gmail.com>",
   "license": "Apache-2.0",
+  "scripts": {
+    "mock": "node src/index.js"
+  },
   "dependencies": {
     "js-yaml": "^3.13.1",
     "mockserver-client": "^5.9.0"

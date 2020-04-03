@@ -1,0 +1,9 @@
+expectations:
+  - name: google
+    regex: /api\/example/
+    fileName: sampleHAR.har # Google Request
+  - name: json_api
+    requestPath: /articles?include=author
+    method: 'GET'
+    statusCode: 200
+    fileName: sampleJSON.json # JSON API Request
