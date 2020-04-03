@@ -76,6 +76,7 @@ On first request you might find some errors if your trying to do HTTPS requests.
 Then, you can make requests to your app in the way you usually do. If the request match an expectation you'll get the mock response otherwise the browser will make the request to origin. 
 
 <br>
+
 ### Contacts
 
 Luís Almeida - [@luispedro18](https://twitter.com/luis___almeida) / [Email](mailto:almeida.lpm@gmail.com)
