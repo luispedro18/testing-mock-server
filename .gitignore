@@ -105,6 +105,7 @@ dist
 
 .DS_Store
 
+*.pem
 
 # Business specific data
 mocks

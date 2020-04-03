@@ -1,4 +1,0 @@
-expectations:
-  - expectation1:
-      regex: /api\/example/
-      fileName: sample.har # google.com HAR file

@@ -5,7 +5,7 @@ services:
     image: mockserver/mockserver
     container_name: mockserver
     env_file:
-      - env/mockserver.env
+      - env/mockserver-nap.env
     ports:
       - 1080:1080
     volumes:
