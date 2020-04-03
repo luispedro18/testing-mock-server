@@ -68,9 +68,14 @@ The last step will create (if not present already) a .pem file that is used by m
 ### Browser Preparation
 
 For this to work you need to tell the browser to proxy every request through Mockserver that will be listening on `localhost:1080`.
-If you're using Firefox you can do this in Preferences. [How to do it?](https://support.mozilla.org/en-US/kb/connection-settings-firefox).
+If you're using Firefox you can do this in Preferences. [How to do it?](https://support.mozilla.org/en-US/kb/connection-settings-firefox)
 For every other browser you need to define it in your OS settings.
 
 On first request you might find some errors if your trying to do HTTPS requests. If so, 2 files will be created and stored at `/certs` forlder. One of them will be a CA Certificate that you need to add into your OS. You might have to do the same in your browser.
 
 Then, you can make requests to your app in the way you usually do. If the request match an expectation you'll get the mock response otherwise the browser will make the request to origin. 
+
+<br>
+### Contacts
+
+Luís Almeida - [@luispedro18](https://twitter.com/luis___almeida) / [Email](mailto:almeida.lpm@gmail.com)
